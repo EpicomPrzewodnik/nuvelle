@@ -213,29 +213,29 @@ img {
   position: absolute;
   right: 0;
   bottom: 0;
-  top: 74%;
-  width: 20%;
+  top: 81%;
+  width: 14%;
   background: var(--lime);
   color: #1a2b00;
   display: flex;
   flex-direction: column;
   justify-content: center;
-  padding: 0 3cqw;
+  padding: 0 1.5cqw;
   text-transform: uppercase;
   font-weight: 800;
   line-height: 1.2;
 }
 
 .scent-tag .scent-small {
-  font-size: 1.15cqw;
+  font-size: 0.95cqw;
 }
 
 .scent-tag .scent-big {
-  font-size: 2cqw;
+  font-size: 1.7cqw;
 }
 
 .scent-tag .scent-small2 {
-  font-size: 1cqw;
+  font-size: 0.78cqw;
   white-space: nowrap;
 }
 
