@@ -1,7 +1,5 @@
 :root {
   --pink: #c2136b;
-  --pink-dark: #7a0a45;
-  --pink-deep: #4a052c;
   --green: #8dc63f;
   --dark: #180a12;
   --dark-panel: rgba(20, 8, 15, 0.78);
@@ -13,10 +11,6 @@
   box-sizing: border-box;
   margin: 0;
   padding: 0;
-}
-
-html {
-  scroll-behavior: smooth;
 }
 
 body {
@@ -32,84 +26,8 @@ img {
   display: block;
 }
 
-.container {
-  width: 100%;
-  max-width: 1400px;
-  margin: 0 auto;
-}
-
-/* ---------- Header ---------- */
-
-.site-header {
-  position: sticky;
-  top: 0;
-  z-index: 50;
-  background: var(--dark);
-  border-bottom: 1px solid rgba(255, 255, 255, 0.08);
-}
-
-.site-header .container {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  padding: 0.9rem 1.5rem;
-}
-
-.logo {
-  font-weight: 700;
-  font-size: clamp(1.1rem, 2vw, 1.5rem);
-  letter-spacing: 0.03em;
-}
-
-.logo span {
-  color: var(--green);
-}
-
-.main-nav ul {
-  list-style: none;
-  display: flex;
-  gap: clamp(1rem, 2.5vw, 2.2rem);
-}
-
-.main-nav a {
-  color: var(--white);
-  text-decoration: none;
-  font-size: 0.95rem;
-  font-weight: 500;
-  opacity: 0.85;
-  transition: opacity 0.2s ease, color 0.2s ease;
-}
-
-.main-nav a:hover {
-  opacity: 1;
-  color: var(--green);
-}
-
-@media (max-width: 640px) {
-  .main-nav ul {
-    gap: 0.9rem;
-  }
-  .main-nav a {
-    font-size: 0.8rem;
-  }
-}
-
-@media (max-width: 560px) {
-  .site-header .container {
-    flex-wrap: wrap;
-    row-gap: 0.5rem;
-    padding: 0.75rem 1rem;
-  }
-  .main-nav ul {
-    width: 100%;
-    justify-content: center;
-    gap: 0.7rem;
-  }
-}
-
-/* ---------- Shared banner-with-overlay structure ---------- */
-/* Each banner scales as one image; container queries keep the
-   overlaid text locked to the image's proportions at every width. */
+/* Banner scales as one image; container queries keep the overlaid
+   text locked to the image's proportions at every width. */
 
 .banner {
   position: relative;
@@ -117,7 +35,7 @@ img {
   container-type: inline-size;
   container-name: banner;
   overflow: hidden;
-  background: var(--pink-deep);
+  background: var(--dark);
 }
 
 .banner img {
@@ -130,14 +48,6 @@ img {
   position: absolute;
   inset: 0;
 }
-
-/* ---------- Section 1: plain hero photo, no text ---------- */
-
-.hero {
-  border-bottom: 4px solid var(--pink);
-}
-
-/* ---------- Section 2: photo + product pitch ---------- */
 
 .pill {
   position: absolute;
@@ -288,81 +198,9 @@ img {
   opacity: 0.75;
 }
 
-/* ---------- Section 3: photo + benefit chips ---------- */
-
-.benefits-overlay .chip-row {
-  position: absolute;
-  left: 0;
-  right: 0;
-  bottom: 22%;
-  display: flex;
-  justify-content: center;
-  gap: 2cqw;
-  padding: 0 4cqw;
-  flex-wrap: wrap;
-}
-
-.chip {
-  background: var(--dark-panel);
-  border: 1px solid rgba(255, 255, 255, 0.25);
-  border-radius: 1.5cqw;
-  padding: 1.4cqw 1.8cqw;
-  text-align: center;
-  min-width: 18cqw;
-  flex: 1 1 18cqw;
-  max-width: 26cqw;
-}
-
-.chip .chip-icon {
-  font-size: 3.2cqw;
-  margin-bottom: 0.4cqw;
-}
-
-.chip .chip-title {
-  font-size: 1.5cqw;
-  font-weight: 800;
-  color: var(--green);
-  text-transform: uppercase;
-  margin-bottom: 0.3cqw;
-}
-
-.chip .chip-text {
-  font-size: 1.25cqw;
-  opacity: 0.9;
-}
-
-.benefits-heading {
-  position: absolute;
-  top: 6%;
-  left: 4%;
-  right: 4%;
-  text-align: center;
-}
-
-.benefits-heading h2 {
-  font-size: 3.6cqw;
-  font-weight: 900;
-  text-transform: uppercase;
-  text-shadow: 0 2px 12px rgba(0, 0, 0, 0.6);
-}
-
-.benefits-heading h2 span {
-  color: var(--green);
-}
-
-.cta-center {
-  position: absolute;
-  bottom: 2%;
-  left: 50%;
-  transform: translateX(-50%);
-}
-
-.cta-center .btn {
-  font-size: 1.5cqw;
-  padding: 1.3cqw 2.6cqw;
-}
-
-/* ---------- Mobile: below ~520px true pixels the cqw text gets too   small to read comfortably inside narrow chips/cards, so we relax   overlays into a stacked, non-absolute layout ---------- */
+/* Below ~560px true pixels the cqw text gets too small to read
+   comfortably inside the card, so we relax it into a stacked,
+   non-absolute layout under the image instead. */
 
 @media (max-width: 560px) {
   .banner {
@@ -398,35 +236,4 @@ img {
 
   .scent-tag { display: none; }
   .mini-tag { display: none; }
-
-  .benefits-heading { position: static; margin-bottom: -0.5rem; padding: 1rem 1rem 0; }
-  .benefits-heading h2 { font-size: 1.3rem; text-shadow: none; }
-
-  .benefits-overlay .chip-row {
-    position: static;
-    flex-direction: column;
-    padding: 1rem;
-  }
-  .chip { max-width: 100%; }
-  .chip .chip-icon { font-size: 1.6rem; }
-  .chip .chip-title { font-size: 0.9rem; }
-  .chip .chip-text { font-size: 0.85rem; }
-
-  .cta-center {
-    position: static;
-    transform: none;
-    display: flex;
-    justify-content: center;
-    padding: 1rem;
-  }
-  .cta-center .btn { font-size: 0.9rem; padding: 0.8rem 1.6rem; }
-}
-
-/* ---------- Footer ---------- */
-
-.site-footer {
-  text-align: center;
-  padding: 2rem 1rem;
-  font-size: 0.85rem;
-  opacity: 0.7;
 }
