@@ -1,9 +1,7 @@
 :root {
   --pink: #c2136b;
   --lime: #c6e21e;
-  --gold: #e8b923;
   --dark: #150810;
-  --dark-panel: rgba(21, 8, 16, 0.85);
   --white: #ffffff;
   --font-main: "Segoe UI", "Helvetica Neue", Arial, sans-serif;
 }
@@ -50,102 +48,60 @@ img {
   inset: 0;
 }
 
-/* ---------- Top-right badge ---------- */
+/* ---------- Hero headline + copy ---------- */
 
-.pill-top-right {
+.hero-headline {
   position: absolute;
-  top: 11%;
-  right: 2%;
-  width: 18%;
-  min-width: 5.5rem;
-  aspect-ratio: 1 / 1;
-  border-radius: 50%;
-  border: 2px solid var(--lime);
-  background: radial-gradient(circle, rgba(21, 8, 16, 0.92) 0%, rgba(21, 8, 16, 0.6) 68%, rgba(21, 8, 16, 0.1) 100%);
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
+  left: 3%;
+  top: 38%;
+  width: 58%;
+  font-family: "Oswald", var(--font-main);
+  font-weight: 700;
+  font-size: clamp(0.8rem, 2.5cqw, 2.5rem);
+  line-height: 1.15;
+  color: var(--lime);
+  text-transform: uppercase;
+  white-space: nowrap;
+}
+
+.hero-desc {
+  position: absolute;
+  left: 3%;
+  top: 47%;
+  width: 44%;
   text-align: center;
-  padding: 2cqw;
-}
-
-.pill-drop {
-  width: 16%;
-  min-width: 0.85rem;
-  height: auto;
-  margin-bottom: 0.3cqw;
-}
-
-.pill-label {
-  font-size: clamp(0.5rem, 1.5cqw, 1.5rem);
-  font-weight: 700;
-  color: var(--gold);
-  text-transform: uppercase;
-  letter-spacing: 0.02em;
-}
-
-.pill-brand {
-  font-size: clamp(0.62rem, 2.1cqw, 2.1rem);
-  font-weight: 900;
+  font-size: clamp(0.5rem, 1.3cqw, 1.3rem);
   color: var(--white);
-  text-transform: uppercase;
-  letter-spacing: 0.01em;
-  margin-top: 0.1cqw;
+  opacity: 0.95;
 }
 
-.pill-sub {
-  font-size: clamp(0.4rem, 1cqw, 1rem);
-  font-weight: 700;
-  color: var(--gold);
-  text-transform: uppercase;
-  line-height: 1.2;
-  margin-top: 0.4cqw;
-}
-
-/* ---------- Bottom-left info card ---------- */
-
-.info-card {
+.hero-limebox {
   position: absolute;
   left: 0;
-  bottom: 0;
-  width: clamp(10rem, 44%, 40rem);
-  background: linear-gradient(180deg, rgba(21, 8, 16, 0.4) 0%, rgba(21, 8, 16, 0.9) 30%, var(--dark) 100%);
-  padding: clamp(0.7rem, 6cqw, 5.4rem) clamp(0.6rem, 4cqw, 3.6rem) clamp(0.5rem, 3cqw, 2.7rem);
-  border-top-right-radius: 2cqw;
-}
-
-.tagline {
-  margin-bottom: 0.4rem;
-}
-
-.tagline .line1 {
-  display: block;
-  font-size: clamp(0.85rem, 3.2cqw, 3.2rem);
-  font-weight: 700;
-  color: var(--white);
-}
-
-.tagline .line2 {
-  display: block;
-  font-size: clamp(0.85rem, 3.2cqw, 3.2rem);
-  font-weight: 700;
-  font-style: italic;
-  color: var(--lime);
-}
-
-.desc {
-  font-size: clamp(0.55rem, 1.4cqw, 1.4rem);
-  max-width: 32cqw;
-  opacity: 0.9;
-  margin-bottom: 0.7rem;
-}
-
-.btn-row {
+  top: 73%;
+  bottom: 12.2%;
+  width: 30%;
+  background: linear-gradient(120deg, #e9f27a 0%, var(--lime) 70%);
+  color: #35460a;
   display: flex;
-  gap: 0.5rem;
-  flex-wrap: wrap;
-  margin-bottom: 0.5rem;
+  align-items: center;
+  padding: 1.4cqw 3% 1.4cqw 4%;
+  border-radius: 0 1.2cqw 1.2cqw 0;
+  font-size: clamp(0.5rem, 1.2cqw, 1.2rem);
+  line-height: 1.3;
+}
+
+.hero-scent {
+  position: absolute;
+  left: 62%;
+  right: 2%;
+  top: 89.5%;
+  font-weight: 700;
+  font-size: clamp(0.45rem, 1.1cqw, 1.1rem);
+  color: var(--white);
+  text-transform: uppercase;
+  text-align: right;
+  text-shadow: 0 2px 6px rgba(0, 0, 0, 0.55);
 }
 
 .btn {
@@ -171,73 +127,8 @@ img {
   color: var(--white);
 }
 
-.btn-outline {
-  background: transparent;
-  border-color: var(--white);
-  color: var(--white);
-}
-
-.mini-tag {
-  font-size: clamp(0.45rem, 1.1cqw, 1.1rem);
-  opacity: 0.75;
-}
-
-/* ---------- Bottom-right scent tag ---------- */
-
-.scent-tag {
-  position: absolute;
-  right: 0;
-  bottom: 2.5%;
-  top: 86%;
-  width: 11%;
-  min-width: 4.5rem;
-  background: var(--lime);
-  color: #1a2b00;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  padding: 0 1.1cqw;
-  text-transform: uppercase;
-  font-weight: 800;
-  line-height: 1.2;
-  border-radius: 0.6cqw;
-}
-
-.scent-tag .scent-small {
-  font-size: clamp(0.35rem, 0.75cqw, 0.75rem);
-}
-
-.scent-tag .scent-big {
-  font-size: clamp(0.55rem, 1.3cqw, 1.3rem);
-}
-
-.scent-tag .scent-small2 {
-  font-size: clamp(0.3rem, 0.6cqw, 0.6rem);
-  white-space: nowrap;
-}
-
-/* Everything stays overlaid on the photo at every width - only the
-   sizes (via clamp) shrink so text keeps a readable floor on phones
-   instead of the layout dropping the card below the image. On phones
-   the card is also pulled narrower and shorter (so it sits lower,
-   since it's anchored to the bottom edge) - most visitors land here
-   on a phone, so that's the view worth polishing most. */
-@media (max-width: 560px) {
-  .info-card {
-    width: clamp(7.2rem, 40%, 13rem);
-    padding: clamp(0.25rem, 2.2cqw, 0.55rem) clamp(0.45rem, 3cqw, 0.8rem) clamp(0.3rem, 1.8cqw, 0.5rem);
-    line-height: 1.1;
-  }
-
-  .tagline { margin-bottom: 0.12rem; }
-  .tagline .line1, .tagline .line2 { line-height: 1.05; }
-  .desc { margin-bottom: 0.25rem; line-height: 1.2; }
-  .btn-row { gap: 0.3rem; margin-bottom: 0.2rem; }
-  .mini-tag { line-height: 1.1; }
-}
-
 @media (max-width: 420px) {
-  .scent-tag { display: none; }
+  .hero-scent { display: none; }
 }
 
 /* ---------- Second banner: product promo panel on white ---------- */
