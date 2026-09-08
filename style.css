@@ -70,6 +70,9 @@ img {
   top: 47%;
   width: 44%;
   text-align: center;
+  font-family: "Poppins", var(--font-main);
+  font-weight: 600;
+  letter-spacing: -0.015em;
   font-size: clamp(0.5rem, 1.3cqw, 1.3rem);
   color: var(--white);
   opacity: 0.95;
@@ -82,7 +85,7 @@ img {
   bottom: 12.2%;
   width: 30%;
   background: linear-gradient(120deg, #e9f27a 0%, var(--lime) 70%);
-  color: #35460a;
+  color: #711426;
   display: flex;
   align-items: center;
   padding: 1.4cqw 3% 1.4cqw 4%;
