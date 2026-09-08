@@ -244,7 +244,24 @@ img {
 
 /* Everything stays overlaid on the photo at every width - only the
    sizes (via clamp) shrink so text keeps a readable floor on phones
-   instead of the layout dropping the card below the image. */
+   instead of the layout dropping the card below the image. On phones
+   the card is also pulled narrower and shorter (so it sits lower,
+   since it's anchored to the bottom edge) - most visitors land here
+   on a phone, so that's the view worth polishing most. */
+@media (max-width: 560px) {
+  .info-card {
+    width: clamp(7.2rem, 40%, 13rem);
+    padding: clamp(0.25rem, 2.2cqw, 0.55rem) clamp(0.45rem, 3cqw, 0.8rem) clamp(0.3rem, 1.8cqw, 0.5rem);
+    line-height: 1.1;
+  }
+
+  .tagline { margin-bottom: 0.12rem; }
+  .tagline .line1, .tagline .line2 { line-height: 1.05; }
+  .desc { margin-bottom: 0.25rem; line-height: 1.2; }
+  .btn-row { gap: 0.3rem; margin-bottom: 0.2rem; }
+  .mini-tag { line-height: 1.1; }
+}
+
 @media (max-width: 420px) {
   .scent-tag { display: none; }
 }
