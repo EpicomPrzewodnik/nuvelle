@@ -214,7 +214,7 @@ img {
 .scent-tag {
   position: absolute;
   right: 0;
-  bottom: 0;
+  bottom: 2.5%;
   top: 86%;
   width: 11%;
   min-width: 4.5rem;
@@ -227,6 +227,7 @@ img {
   text-transform: uppercase;
   font-weight: 800;
   line-height: 1.2;
+  border-radius: 0.6cqw;
 }
 
 .scent-tag .scent-small {
