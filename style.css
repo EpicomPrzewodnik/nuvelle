@@ -50,33 +50,6 @@ img {
   inset: 0;
 }
 
-/* ---------- Logo lockup ---------- */
-
-.logo-lockup {
-  position: absolute;
-  left: 5%;
-  top: 3%;
-  line-height: 0.95;
-}
-
-.logo-thin {
-  display: block;
-  font-family: "Poppins", var(--font-main);
-  font-weight: 400;
-  font-size: clamp(0.75rem, 3.4cqw, 3.4rem);
-  color: var(--white);
-}
-
-.logo-bold {
-  display: block;
-  font-family: "Oswald", var(--font-main);
-  font-weight: 700;
-  font-size: clamp(1.3rem, 7.6cqw, 7.6rem);
-  text-transform: uppercase;
-  letter-spacing: 0.01em;
-  color: var(--white);
-}
-
 /* ---------- Top-right badge ---------- */
 
 .pill-top-right {
