@@ -62,7 +62,7 @@ img {
   color: var(--lime);
   text-transform: uppercase;
   white-space: nowrap;
- 
+  text-shadow: 0 0 8px rgba(198, 226, 30, 0.85), 0 0 18px rgba(198, 226, 30, 0.65), 0 0 36px rgba(198, 226, 30, 0.45);
 }
 
 .hero-desc {
@@ -182,4 +182,35 @@ img {
 
 @media (max-width: 560px) {
   .promo-desc { max-width: 100%; }
+}
+
+/* ---------- Third banner: "nowość na rynku" panel on white ---------- */
+
+.promo2-banner {
+  background: #f4f0ee;
+}
+
+.promo2-panel {
+  position: absolute;
+  left: 6%;
+  top: 43%;
+  width: 46%;
+}
+
+.promo2-text {
+  font-family: "Poppins", var(--font-main);
+  font-weight: 400;
+  font-size: clamp(0.5rem, 1.4cqw, 1.4rem);
+  line-height: 1.35;
+  color: #222222;
+  margin-bottom: 1em;
+}
+
+.promo2-highlight {
+  font-weight: 700;
+  color: var(--lime);
+}
+
+@media (max-width: 560px) {
+  .promo2-panel { width: 90%; }
 }
