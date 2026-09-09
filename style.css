@@ -52,23 +52,23 @@ img {
 
 .hero-headline {
   position: absolute;
-  left: 3%;
-  top: 38%;
+  left: 10%;
+  top: 35%;
   width: 58%;
   font-family: "Oswald", var(--font-main);
   font-weight: 700;
-  font-size: clamp(0.8rem, 2.5cqw, 2.5rem);
+  font-size: clamp(0.3rem, 2.5cqw, 2.5rem);
   line-height: 1.15;
   color: var(--lime);
   text-transform: uppercase;
   white-space: nowrap;
-  text-shadow: 0 0 8px rgba(198, 226, 30, 0.85), 0 0 18px rgba(198, 226, 30, 0.65), 0 0 36px rgba(198, 226, 30, 0.45);
+  
 }
 
 .hero-desc {
   position: absolute;
   left: 3%;
-  top: 47%;
+  top: 46%;
   width: 44%;
   text-align: center;
   font-family: "Poppins", var(--font-main);
@@ -93,6 +93,7 @@ img {
   border-radius: 0 1.2cqw 1.2cqw 0;
   font-size: clamp(0.5rem, 1.2cqw, 1.2rem);
   line-height: 1.3;
+  font-size: 0.9rem
 }
 
 .hero-scent {
