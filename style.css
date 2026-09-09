@@ -147,9 +147,6 @@ img {
   color: var(--lime);
 }
 
-@media (max-width: 560px) {
-  .promo2-panel { width: 90%; }
-}
 
 /* ---------- Third banner: "Czym jest Microclean?" info panel ---------- */
 
