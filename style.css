@@ -80,15 +80,15 @@ img {
 .hero-limebox {
   position: absolute;
   left: 0;
-  top: 73%;
-  bottom: 12.2%;
-  width: 30%;
-  background: linear-gradient(120deg, #e9f27a 0%, var(--lime) 70%);
+  top: 72%;
+  bottom: 11.3%;
+  width: 31.5%;
+  background: linear-gradient(120deg, #e9f27a 0%, #ace330 70%, #ace330 100%);
   color: #711426;
   display: flex;
   align-items: center;
   padding: 1.4cqw 3% 1.4cqw 4%;
-  border-radius: 0 1.2cqw 1.2cqw 0;
+  border-radius: 0 1.6cqw 1.6cqw 0;
   font-size: clamp(0.45rem, 1.2cqw, 0.9rem);
   line-height: 1.3;
 }
