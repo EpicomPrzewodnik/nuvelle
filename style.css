@@ -140,3 +140,37 @@ img {
 @media (max-width: 560px) {
   .promo2-panel { width: 90%; }
 }
+
+/* ---------- Third banner: "Czym jest Microclean?" info panel ---------- */
+
+.info3-panel {
+  position: absolute;
+  left: 32%;
+  top: 28%;
+  width: 65%;
+}
+
+.info3-sub {
+  font-family: "Poppins", var(--font-main);
+  font-weight: 300;
+  text-align: center;
+  font-size: clamp(0.65rem, 1.7cqw, 1.7rem);
+  line-height: 1.35;
+  color: var(--white);
+  margin-bottom: 1em;
+}
+
+.info3-text {
+  font-family: "Poppins", var(--font-main);
+  font-weight: 400;
+  font-size: clamp(0.55rem, 1.25cqw, 1.25rem);
+  line-height: 1.45;
+  color: var(--white);
+  margin-bottom: 1em;
+}
+
+.info3-highlight {
+  font-weight: 700;
+  color: var(--lime);
+}
+
