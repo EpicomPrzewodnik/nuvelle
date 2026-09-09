@@ -174,3 +174,23 @@ img {
   color: var(--lime);
 }
 
+/* ---------- Fourth banner: Umyj / Osusz / Wyrzuć steps ---------- */
+
+.steps-label {
+  position: absolute;
+  top: 15%;
+  transform: translateX(-50%);
+  font-family: "Oswald", var(--font-main);
+  font-weight: 700;
+  font-size: clamp(0.7rem, 3cqw, 3rem);
+  color: var(--lime);
+  text-transform: uppercase;
+  letter-spacing: 0.02em;
+  text-align: center;
+  white-space: nowrap;
+}
+
+.steps-label--1 { left: 17%; }
+.steps-label--2 { left: 50%; }
+.steps-label--3 { left: 83%; }
+
