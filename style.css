@@ -66,9 +66,9 @@ img {
 
 .hero-desc {
   position: absolute;
-  left: 0;
+  left: 4%;
   top: 45%;
-  width: 47%;
+  width: 43%;
   text-align: center;
   font-family: "Poppins", var(--font-main);
   font-weight: 600;
