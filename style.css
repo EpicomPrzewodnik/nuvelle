@@ -200,7 +200,7 @@ img {
 .promo2-text {
   font-family: "Poppins", var(--font-main);
   font-weight: 400;
-  font-size: clamp(0.5rem, 1.4cqw, 1.4rem);
+  font-size: clamp(0.6rem, 1.8cqw, 1.8rem);
   line-height: 1.35;
   color: #222222;
   margin-bottom: 1em;
