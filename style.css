@@ -66,14 +66,14 @@ img {
 
 .hero-desc {
   position: absolute;
-  left: 3%;
-  top: 46%;
-  width: 44%;
+  left: 0;
+  top: 45%;
+  width: 47%;
   text-align: center;
   font-family: "Poppins", var(--font-main);
   font-weight: 600;
   letter-spacing: -0.015em;
-  font-size: clamp(0.5rem, 1.3cqw, 1.3rem);
+  font-size: clamp(0.6rem, 1.7cqw, 1.7rem);
   color: var(--white);
   opacity: 0.95;
 }
