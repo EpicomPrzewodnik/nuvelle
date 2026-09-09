@@ -110,6 +110,16 @@ img {
   .hero-scent { display: none; }
 }
 
+@media (max-width: 560px) {
+  .hero-limebox {
+    top: 71%;
+    bottom: 2%;
+    width: 40%;
+    font-size: clamp(0.4rem, 1.2cqw, 0.9rem);
+    line-height: 1.15;
+  }
+}
+
 /* ---------- Second banner: "nowość na rynku" panel on white ---------- */
 
 .promo2-banner {
