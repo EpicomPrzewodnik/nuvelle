@@ -85,10 +85,10 @@ img {
   position: absolute;
   left: 80%;
   right: 1.5%;
-  top: 94.3%;
+  top: 94.7%;
   font-weight: 700;
-  font-size: clamp(0.4rem, 1.1cqw, 1.1rem);
-  line-height: 1.15;
+  font-size: clamp(0.45rem, 1.3cqw, 1.3rem);
+  line-height: 1.1;
   color: #690022;
   text-transform: uppercase;
   text-align: left;
