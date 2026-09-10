@@ -94,6 +94,14 @@ img {
   white-space: nowrap;
 }
 
+/* Phone-only stand-in for .hero-scent: the diagonal white curve at
+   bottom-right shrinks to almost nothing at phone widths, so there's
+   no room there for this text - show it instead in the open gap
+   between the description and the lime box. */
+.hero-scent-mobile {
+  display: none;
+}
+
 @media (max-width: 560px) {
   .hero-desc {
     top: 44%;
@@ -107,6 +115,23 @@ img {
      hide rather than let it clip. */
   .hero-scent {
     display: none;
+  }
+
+  .hero-scent-mobile {
+    display: block;
+    position: absolute;
+    left: 4%;
+    right: 4%;
+    top: 63.5%;
+    text-align: center;
+    font-family: "Barlow Condensed", var(--font-main);
+    font-weight: 700;
+    font-size: clamp(0.34rem, 2.1cqw, 0.55rem);
+    line-height: 1.1;
+    color: var(--white);
+    text-transform: uppercase;
+    white-space: nowrap;
+    opacity: 0.9;
   }
 
   .hero-limebox {
