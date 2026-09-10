@@ -108,7 +108,7 @@ img {
   }
 
   .hero-limebox {
-    top: 71%;
+    top: 65%;
     width: 33%;
     font-size: clamp(0.42rem, 1.5cqw, 0.6rem);
     line-height: 1.2;
