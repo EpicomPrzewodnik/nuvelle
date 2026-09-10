@@ -216,7 +216,7 @@ img {
 .why-title {
   font-family: "Barlow Condensed", var(--font-main);
   font-weight: 700;
-  font-size: clamp(0.6rem, 2.3cqw, 2.5rem);
+  font-size: clamp(0.65rem, 2.0cqw, 2.2rem);
   line-height: 1.15;
   text-transform: uppercase;
   color: #8a9a00;
