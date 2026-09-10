@@ -98,12 +98,24 @@ img {
 }
 
 @media (max-width: 560px) {
-  .hero-limebox {
-    top: 71%;
-    bottom: 2%;
-    width: 40%;
-    font-size: clamp(0.4rem, 1.2cqw, 0.9rem);
+  .hero-desc {
+    top: 42%;
     line-height: 1.15;
+  }
+
+  /* There's only a sliver of white space here below the photo's
+     curve, not enough room for two readable lines at phone widths -
+     hide rather than let it clip. */
+  .hero-scent {
+    display: none;
+  }
+
+  .hero-limebox {
+    top: 68%;
+    bottom: 2%;
+    width: 55%;
+    font-size: clamp(0.6rem, 1.8cqw, 0.85rem);
+    line-height: 1.2;
   }
 }
 
