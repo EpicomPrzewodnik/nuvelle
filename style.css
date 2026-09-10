@@ -68,25 +68,25 @@ img {
 .hero-limebox {
   position: absolute;
   left: 0;
-  top: 67%;
-  width: 34%;
+  top: 66%;
+  width: 35%;
   background: linear-gradient(120deg, #e9f27a 0%, #ace330 70%, #ace330 100%);
   color: #711426;
-  padding: 1.5cqw 4%;
+  padding: 1.6cqw 4%;
   border-radius: 0 2cqw 2cqw 0;
   font-family: "Plus Jakarta Sans", var(--font-main);
-  font-size: clamp(0.5rem, 1.15cqw, 0.85rem);
+  font-size: clamp(0.6rem, 1.35cqw, 1rem);
   line-height: 1.3;
 }
 
 .hero-scent {
   position: absolute;
-  left: 80%;
-  right: 1.5%;
-  top: 94.7%;
+  left: 81%;
+  right: 0.5%;
+  top: 94.3%;
   font-family: "Barlow Condensed", var(--font-main);
   font-weight: 700;
-  font-size: clamp(0.45rem, 1.3cqw, 1.3rem);
+  font-size: clamp(0.48rem, 1.4cqw, 1.4rem);
   line-height: 1.1;
   color: #690022;
   text-transform: uppercase;
@@ -98,7 +98,7 @@ img {
   .hero-desc {
     top: 44%;
     width: 40%;
-    font-size: clamp(0.52rem, 1.7cqw, 1.7rem);
+    font-size: clamp(0.46rem, 1.7cqw, 1.7rem);
     line-height: 1.08;
   }
 
@@ -110,9 +110,9 @@ img {
   }
 
   .hero-limebox {
-    top: 65%;
-    width: 33%;
-    font-size: clamp(0.42rem, 1.5cqw, 0.6rem);
+    top: 66%;
+    width: 40%;
+    font-size: clamp(0.5rem, 1.9cqw, 0.75rem);
     line-height: 1.2;
     padding: 1.6cqw 3%;
   }
@@ -216,7 +216,7 @@ img {
 .why-title {
   font-family: "Barlow Condensed", var(--font-main);
   font-weight: 700;
-  font-size: clamp(0.48rem, 1.35cqw, 1.35rem);
+  font-size: clamp(0.6rem, 1.7cqw, 1.7rem);
   line-height: 1.2;
   text-transform: uppercase;
   color: #8a9a00;
@@ -226,9 +226,18 @@ img {
 .why-text {
   font-family: "Plus Jakarta Sans", var(--font-main);
   font-weight: 400;
-  font-size: clamp(0.38rem, 0.9cqw, 0.9rem);
+  font-size: clamp(0.48rem, 1.15cqw, 1.15rem);
   line-height: 1.3;
   color: #690022;
+}
+
+@media (max-width: 560px) {
+  .why-title {
+    font-size: clamp(0.5rem, 1.7cqw, 1.7rem);
+  }
+  .why-text {
+    font-size: clamp(0.4rem, 1.15cqw, 1.15rem);
+  }
 }
 
 /* ---------- "A Ty czym wycierasz ręce?" banner ---------- */
@@ -242,7 +251,7 @@ img {
 .reason6-panel {
   position: absolute;
   left: 4.3%;
-  top: 47%;
+  top: 54%;
   width: 34%;
 }
 
@@ -302,7 +311,8 @@ img {
 .contact-email {
   position: absolute;
   left: 9.7%;
-  top: 73%;
+  top: 76.4%;
+  transform: translateY(-50%);
   font-family: "Plus Jakarta Sans", var(--font-main);
   font-weight: 400;
   font-size: clamp(0.45rem, 1.5cqw, 1.5rem);
