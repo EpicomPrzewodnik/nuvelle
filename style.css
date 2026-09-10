@@ -108,11 +108,11 @@ img {
   }
 
   .hero-limebox {
-    top: 70%;
-    width: 46%;
-    font-size: clamp(0.5rem, 1.7cqw, 0.7rem);
-    line-height: 1.25;
-    padding: 2cqw 4%;
+    top: 71%;
+    width: 33%;
+    font-size: clamp(0.42rem, 1.5cqw, 0.6rem);
+    line-height: 1.2;
+    padding: 1.6cqw 3%;
   }
 }
 
