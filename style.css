@@ -187,18 +187,16 @@ img {
   font-size: clamp(0.65rem, 2.1cqw, 2.1rem);
   line-height: 1.4;
   color: var(--white);
-  margin-bottom: 1.3em;
+  margin-bottom: 1em;
 }
 .info3-text {
   font-family: "Plus Jakarta Sans", var(--font-main);
   font-weight: 400;
   font-size: clamp(0.55rem, 1.55cqw, 1.7rem);
-  line-height: 1.9;
+  line-height: 1.6;
   letter-spacing: 0.02em;
   color: var(--white);
-  margin-bottom: 1.3em;
-  max-width: 42ch;
-  
+  margin-bottom: 1em;
 }
 
 .info3-highlight {
