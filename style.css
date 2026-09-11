@@ -52,6 +52,7 @@ img {
    itself now, so it needs no HTML overlay. */
 
 .hero-desc {
+  padding-top: 0.8em;
   position: absolute;
   left: 4%;
   top: 45%;
@@ -174,7 +175,7 @@ img {
 
 .info3-panel {
   position: absolute;
-  left: 32%;
+  left: 30%;
   top: 30%;
   width: 52%;
 }
