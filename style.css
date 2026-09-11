@@ -52,6 +52,7 @@ img {
    itself now, so it needs no HTML overlay. */
 
 .hero-desc {
+  padding-top: 0.8em;
   position: absolute;
   left: 4%;
   top: 45%;
@@ -174,7 +175,7 @@ img {
 
 .info3-panel {
   position: absolute;
-  left: 32%;
+  left: 30%;
   top: 30%;
   width: 52%;
 }
@@ -182,7 +183,7 @@ img {
 .info3-sub {
   font-family: "Plus Jakarta Sans", var(--font-main);
   font-weight: 300;
-  text-align: center;
+  text-align: left;
   font-size: clamp(0.65rem, 2.1cqw, 2.1rem);
   line-height: 1.4;
   color: var(--white);
@@ -197,6 +198,7 @@ img {
   color: var(--white);
   margin-bottom: 1.3em;
   max-width: 42ch;
+  
 }
 
 .info3-highlight {
