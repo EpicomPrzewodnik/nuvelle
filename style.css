@@ -182,7 +182,7 @@ img {
 .info3-sub {
   font-family: "Plus Jakarta Sans", var(--font-main);
   font-weight: 300;
-  text-align: center;
+  text-align: left;
   font-size: clamp(0.65rem, 2.1cqw, 2.1rem);
   line-height: 1.4;
   color: var(--white);
